@@ -49,10 +49,23 @@ switch (c.type){
     printf(VERT "[ T ]" RESET);
     break;
 
-
-
+}
 
 }
+
+
+//Affiche le plateau complet 
+void afficher_plateau(Plateau *plateau) {
+    printf("  +-----+-----+-----+-----+-----+\n");
+    for (int i = 0; i<5 ; i++){
+        printf("  |");
+        for (int j=0; j<5; j++){
+            afficher_case(plateau->grille[i][j]);
+            printf("|");
+        }
+        printf("\n +-----+-----+-----+-----+-----+\n");
+
+    }
 
 }
 
