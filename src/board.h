@@ -1,7 +1,7 @@
 #ifndef BOARD_H
 #define BOARD_H
-
-
+#define TAILLE_PLATEAU 5
+#define NB_JOUEUR_MAX 4
 // TODO: prototypes des fonctions du module board
 
 #include "player.h"
@@ -14,7 +14,7 @@ typedef enum {
     PORTAIL,
     TOTEM
 
-} TypeCase;
+}TypeCase; //COMMENTAIRE A FAIRE//
 
 typedef enum {
     BASILIC,
@@ -24,18 +24,23 @@ typedef enum {
 
 }TypeMonstre;
 
-
+typedef enum {
+    EPEE_DE_FEU,
+    BATON_DES_FAMILIERS,
+    GRIMOIRE_INTERDIT,
+    DAGUE_DE_SOMMEIL,
+}TypeArmeAntique;
 
 typedef struct{
     TypeCase type;
     TypeMonstre monstre;
-    TypeAventurier arme;
+    TypeArmeAntique arme;
     int revelee;
 }Case;
 
 typedef struct {
-    Case grille[5][5];
-    Joueur joueurs[4];
+    Case grille[TAILLE_PLATEAU][TAILLE_PLATEAU];
+    Joueur joueurs[NB_JOUEUR_MAX];
     int nb_joueurs;
 } Plateau;
 
