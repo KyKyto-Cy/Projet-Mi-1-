@@ -16,6 +16,7 @@
 #define BLANC       "\033[37m"
 #define GRAS        "\033[1m"
 
-
+void afficher_plateau(Plateau *plateau);
+void afficher_case(Case c);
 
 #endif
