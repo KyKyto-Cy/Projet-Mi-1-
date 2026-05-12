@@ -3,13 +3,21 @@
 
 // TODO: prototypes des fonctions du module display
 
-#include "board.h"
-#include "player.h"
+#include "board.h" //on inclue le fichier du plateau 
+#include "player.h"//on inclue le fichier du joueur 
 
+// couleur ANSI 
+#define RESET       "\033[0m"
+#define ROUGE       "\033[31m"
+#define VERT        "\033[32m"
+#define JAUNE       "\033[33m"
+#define BLEU        "\033[34m"
+#define MAGENTA     "\033[35m"
+#define CYAN        "\033[36m"
+#define BLANC       "\033[37m"
+#define GRAS        "\033[1m"
 
-
-
-
-
+void afficher_plateau(Plateau *plateau);
+void afficher_case(Case c);
 
 #endif
