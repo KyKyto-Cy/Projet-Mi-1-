@@ -19,5 +19,8 @@ void menu_principal(){
     printf("==================================================== \n");
     printf(RESET "\n");
 
+    printf("Votre choix : \n");
+
+
 
 }
