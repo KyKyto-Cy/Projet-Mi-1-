@@ -2,21 +2,22 @@
 
 
 void menu_principal(){
+    printf(GRAS CYAN "\n");
     printf("==================================================== \n");
-    printf("===                                              === \n");
-    printf("===                    MEMO RPG                  === \n");
-    printf("===                                              === \n");
-    printf("===                                              === \n");
-    printf("===                                              === \n");
-    printf("===                                              === \n");
-    printf("===                NOUVELLE PARTIE               === \n");
-    printf("===                                              === \n");
-    printf("===                                              === \n");
-    printf("===                                              === \n");
-    printf("===                                              === \n");
-    printf("===  QUITTER                                     === \n");
+    printf("|||                                              ||| \n");
+    printf("|||                    MEMO RPG                  ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                NOUVELLE PARTIE               ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||                                              ||| \n");
+    printf("|||  QUITTER                                     ||| \n");
     printf("==================================================== \n");
-
+    printf(RESET "\n");
 
 
 }
